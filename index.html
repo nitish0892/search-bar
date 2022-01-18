@@ -19,11 +19,14 @@ background-image: url('https://wallpaper.dog/large/11032562.jpg');
 	radius:3px;
 	margin-left:10px;
 margin-right:10px;
+/* margin-top: 50vh; */
       	border: auto;
       	border-radius: 10px;
   	box-shadow: 1px 1px 3px #000000;
+	 
 	
 }
+
 .gsc-search-button.gsc-search-button-v2
 {
 	border-radius: 8px;
@@ -52,11 +55,23 @@ background-color:transparent;
 #___gcse_0{
 width:106%;
 margin-left:-3px;
-backgorund-color:blue;
+/* background-color:blue; */
 }
 #speechtotext{
 margin-left: 50%;
 margin-bottom: -17px;
+}
+  
+#hii{
+  display: block;
+  margin-left:40%;
+  margin-right:50%;
+  margin-top:8%;
+  width: 20%;
+
+position:fixed;
+z-index: -1; 
+
 }
 
 </style>
@@ -64,32 +79,18 @@ margin-bottom: -17px;
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
-
 <body>
 <div1>
 
 </div1>
-<i class="fa fa-microphone" id="speechtotext" onclick="record()" style="font-size:40px;color:#683522;text-shadow:2px 2px 4px #000000;"></i>
+
 <script async src="https://cse.google.com/cse.js?cx=7f92af3eb52014e30"></script>
 
-<script>
-function record(){
-var recognition = new webkitSpeechRecognition();
-recognition.lang = "en-GB";
-recognition.onresult = function(event)
-{
-document.getElementById('gsc-i-id1').value=event.results[0][0].transcript;
-}
-recognition.start();
-}
 </script>
 
-
-
 <div class="gcse-search"></div>
-<div2>
-
+<div2 class="frontimage">
+<img id="hii" src="digi-search.png" alt="image">
 </div2>
 </body>
 </html>
